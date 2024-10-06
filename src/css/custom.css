@@ -1,0 +1,226 @@
+.book-card {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.book-card:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.book-image-container {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-right: 1rem; /* Add spacing between image and text */
+    flex-shrink: 0; /* Ensure image container does not shrink */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.table-header, .table-row-header {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    width: 100%;
+}
+
+.table-header {
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ccc;
+}
+
+.table-row-header {
+    color: #333;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.table-row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.book-title, .book-author, .book-count, .action {
+    flex-grow: 1;
+    padding: 0.5rem;
+    text-align: center; /* Center text for all columns */
+}
+
+.book-title {
+    text-align: center;
+}
+
+.book-author {
+    text-align: center;
+}
+
+.book-count {
+    text-align: center;
+}
+
+.action {
+    display: flex;
+    justify-content: center; /* Center the action button horizontally */
+    text-align: center;
+}
+
+.book-title-header, .book-author-header, .book-count-header, .action-header {
+    flex-grow: 1;
+    padding: 0.5rem;
+    text-align: center; /* Center the headers to match their columns */
+}
+
+.book-image-header {
+    width: 100px;
+    text-align: center;
+    flex-shrink: 0; /* Fixed size for header column */
+}
+
+.p-button-outlined {
+    transition: all 0.3s ease;
+}
+
+.p-button-outlined:hover {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.login-card {
+    background-image: url("../assets/library.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+    position: relative;
+}
+
+.float-label input {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    height: 50px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    padding-left: 1rem;
+}
+
+.float-label {
+    color: black;
+    width: 300px; /* Adjust width for better alignment */
+}
+
+.login-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.login-card > * {
+    position: relative;
+    z-index: 2;
+}
+
+.p-button {
+    width: 50%;
+    margin-top: 1rem;
+}
+
+.login-btn{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.register-link {
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.p-error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../assets/library.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.register-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+.register-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.float-label {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.register-button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.p-error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
